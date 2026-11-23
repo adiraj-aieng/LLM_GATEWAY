@@ -1,0 +1,48 @@
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- env / secrets ---
+.env
+.env.local
+*.pem
+*.key
+
+# --- runtime data ---
+gateway.db
+*.db
+*.db-wal
+*.db-shm
+logs/
+*.log
+
+# --- ml artifacts that are large / regenerable ---
+ml/artifacts/*.bin
+ml/artifacts/*.onnx
+ml/datasets/raw/
+.cache/
+
+# --- load test output ---
+loadtest/results/*.csv
+loadtest/results/*.html
+
+# --- node ---
+node_modules/
+dist/
+.vite/
+
+# --- editors / os ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- docker ---
+docker-compose.override.yml
